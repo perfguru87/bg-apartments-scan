@@ -37,7 +37,7 @@ http://www.imot.bg/pcgi/imot.cgi?act=5&adv=2e156100140276177&slink=4v1lqy&f1=19
 https://ues.bg/en/offers/11175-furnished-apartment-with-parking-place-in-lozenets-for-rent
 http://www.imot.bg/pcgi/imot.cgi?act=5&adv=2e155964721281710&slink=4vawmn&f1=12
 EOD
-python ./aparts-scanner.py -l apartments-list.txt -w apartments-list.html -d 'InterContinental Sofia'
+python ./bg-apartments-scan.py -l apartments-list.txt -w apartments-list.html -d 'InterContinental Sofia'
 ```
 
 ## Scan results of some pre-filtered results
@@ -52,5 +52,5 @@ https://www.imot.bg/pcgi/imot.cgi?act=3&slink=4vawmn&f1=5
 https://ues.bg/en/loadOffers/rentals?map_quarter_id=1155%2C1153%2C1092%2C1072%2C1168%2C1169%2C1096%2C1151%2C1154%2C1152%2C1118&rent=rentals&category=apartment&category2=&location_id=4451&quarter_id%5B0%5D=&price_from=&price_to=1300&area_from=50&area_to=&type=&lifestyle_category_id=&completion_id=&offer_category_type_id=&heating_id=&parking_id=&closed-complex-header=&project-header=&advanced-search=&page=1
 https://ues.bg/en/loadOffers/rentals?map_quarter_id=1155%2C1153%2C1092%2C1072%2C1168%2C1169%2C1096%2C1151%2C1154%2C1152%2C1118&rent=rentals&category=apartment&category2=&location_id=4451&quarter_id%5B0%5D=&price_from=&price_to=1300&area_from=50&area_to=&type=&lifestyle_category_id=&completion_id=&offer_category_type_id=&heating_id=&parking_id=&closed-complex-header=&project-header=&advanced-search=&page=2
 EOD
-python ./aparts-scanner.py -p search-results.txt -w search-results.html -d 'InterContinental Sofia'
+python ./bg-apartments-scan.py -p search-results.txt -w search-results.html -d 'InterContinental Sofia'
 ```
