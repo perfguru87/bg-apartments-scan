@@ -29,7 +29,7 @@ Scanned metrics:
 ## Rank given list of apartments
 
 ```
-cat > aparments-list.txt << EOD
+cat > apartments-list.txt << EOD
 https://www.imot.bg/pcgi/imot.cgi?act=5&adv=2e156534515892505&slink=4v6yvc&f1=23
 https://www.luximmo.com/bulgaria/region-sofia/sofia/luxury-properties-penthouses/luxury-property-22338-penthouse-for-rent-in-sofia.html
 https://www.luximmo.com/bulgaria/region-sofia/sofia/luxury-properties-3-bedroom-apartments/luxury-property-28431-3-bedroom-apartment-for-rent-in-sofia.html
