@@ -10,6 +10,7 @@ Features:
 - websites scanner
 - overall apartment "weight" calculation
 - distance calculation
+- configurable metrics weights (see config.txt)
 
 Scanned metrics:
 - square
@@ -25,6 +26,9 @@ Scanned metrics:
 - ...
 
 # Example
+
+First, review and edit the metrics weights in config.txt
+Second, build a list of apartments to scan and scan it:
 
 ## Rank given list of apartments
 
