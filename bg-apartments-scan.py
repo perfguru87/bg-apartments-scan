@@ -390,12 +390,12 @@ class Apartment:
                 elif parse_next == "floor":
                     self.parse('floor', reInt, line)
                     if self.floor:
-                        parse_next = "" 
+                        parse_next = ""
 
                 elif parse_next == "num_of_floors":
                     self.parse('floor_max', reInt, line)
                     if self.floor_max:
-                        parse_next = "" 
+                        parse_next = ""
 
                 if "curr_conv" in line:
                     parse_next = "price"
