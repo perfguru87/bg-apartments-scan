@@ -27,7 +27,7 @@ Scanned metrics:
 
 # Example
 
-First, review and edit the metrics weights in config.txt
+First, review and edit the metrics weights in the *config.txt*
 Second, build a list of apartments to scan and scan it:
 
 ## Rank given list of apartments
