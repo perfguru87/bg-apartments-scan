@@ -662,7 +662,7 @@ def parse_args():
     parser.add_argument('-r', '--clear-cache', action="store_true", help="clear apartments HTML caches")
     parser.add_argument('-d', '--distance', help="analyze distance to given location")
     parser.add_argument('-c', '--config', default='config.txt', help="configuration file")
-    parser.add_argument('-n', '--head', default=-1, type=int, help="take only HEAD first urls from the file")
+    parser.add_argument('-n', '--head', default=None, type=int, help="take only HEAD first urls from the file")
 
     return parser.parse_args()
 
