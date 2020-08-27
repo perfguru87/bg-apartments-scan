@@ -95,7 +95,7 @@ reRenovated = [re.compile(r'[ ,>](renovated)', re.IGNORECASE)]
 reFireplace = [re.compile(r'[ ,>](fireplace)', re.IGNORECASE)]
 reRestaurants = [re.compile(r'[ ,>](restaurant)', re.IGNORECASE)]
 reApartmentLink = [re.compile(r'//(www.imot.bg/pcgi/imot.cgi\?act=5&adv=\S+?&slink=\S+?)"'),
-                   re.compile(r'(https://ues.bg/en/offers/\S+?)["<\s]'),
+                   re.compile(r'(https://ues.bg/en/offers/[1-9]\S+?)["<\s]'),
                    re.compile(r'<a class="offer-link"\s+href="(https://www.luximmo.com/\S+.html)">')]
 reImg = [re.compile(r'src=\"(//imot.focus.bg/photosimotbg/\S+small\S+?.pic)'),
          re.compile(r'src=\"(//imot.focus.bg/photosimotbg/\S+med\S+?.jpg)'),
