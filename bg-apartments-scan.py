@@ -88,6 +88,8 @@ reCalm = [re.compile(r'[ ,>](calm)', re.IGNORECASE),
           re.compile(r'[ ,>](qiuet)', re.IGNORECASE)]
 reUnique = [re.compile(r'[ ,>](unique)', re.IGNORECASE)]
 reLuxury = [re.compile(r'[ ,>](luxury)', re.IGNORECASE)]
+reBath = [re.compile(r'[Bb]ath[ ,.<]', re.IGNORECASE),
+          re.compile(r'[бЅ]ан€[ ,.<]', re.IGNORECASE)]
 rePrestigious = [re.compile(r'[ ,>](prestigious)', re.IGNORECASE)]
 reRenovated = [re.compile(r'[ ,>](renovated)', re.IGNORECASE)]
 reFireplace = [re.compile(r'[ ,>](fireplace)', re.IGNORECASE)]
@@ -136,6 +138,7 @@ class Apartment:
         self.fireplace = 0
         self.unique = 0
         self.luxury = 0
+        self.bath = 0
         self.prestigious = 0
         self.renovated = 0
         self.gym = 0
@@ -194,6 +197,8 @@ class Apartment:
             facilities.append("unique")
         if self.luxury:
             facilities.append("luxury")
+        if self.bath:
+            facilities.append("bath")
         if self.luxe:
             facilities.append("luxe")
         if self.prestigious:
@@ -348,6 +353,7 @@ class Apartment:
             self.parse('fireplace', reFireplace, line, 1)
             self.parse('unique', reFireplace, line, 1)
             self.parse('luxury', reLuxury, line, 1)
+            self.parse('bath', reBath, line, 1)
             self.parse('prestigious', rePrestigious, line, 1)
             self.parse('renovated', reRenovated, line, 1)
             self.parse('gym', reGym, line, 1)
@@ -492,7 +498,7 @@ class Apartment:
 
         for attr in ('price', 'rooms', 'sqm', 'floor', 'elevator', 'internet',
                      'location', 'mall',
-                     'luxe', 'view', 'calm', 'fireplace', 'unique', 'luxury', 'leisure',
+                     'luxe', 'view', 'calm', 'fireplace', 'unique', 'luxury', 'bath', 'leisure',
                      'pool', 'restaurants', 'supermarket', 'balcony', 'park', 'garden', 'garage', 'parkslot',
                      'furniture', 'cozy', 'subway', 'distance'):
             if self.__dict__[attr]:
