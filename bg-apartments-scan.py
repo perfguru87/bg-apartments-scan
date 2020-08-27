@@ -721,7 +721,7 @@ def main():
     args = parse_args()
 
     fmt = '%(asctime)-15s %(levelname)7s %(message)s'
-    if args.verbose >= 2:
+    if args.verbose and args.verbose >= 2:
         logging.basicConfig(format=fmt, level=logging.DEBUG, filename=None)
     else:
         logging.basicConfig(format=fmt, level=logging.INFO if args.verbose else logging.ERROR, filename=None)
