@@ -662,8 +662,8 @@ def parse_args():
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument('-v', '--verbose', action='count', help='Enable verbose mode (use -vv for max verbosity)')
 
-    parser.add_argument('-l', '--links', help="file with imot.bg apartments links")
-    parser.add_argument('-p', '--pages', help="file with imot.bg apartments search pages links")
+    parser.add_argument('-l', '--links', help="file with imot.bg/etc apartments links")
+    parser.add_argument('-p', '--pages', help="file with imot.bg/etc apartments search pages links")
     parser.add_argument('-w', '--html', help="write to given HTML file")
     parser.add_argument('-r', '--clear-cache', action="store_true", help="clear apartments HTML caches")
     parser.add_argument('-d', '--distance', help="analyze distance to given location")
